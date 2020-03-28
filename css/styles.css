@@ -1,6 +1,19 @@
-#search {
+form {
+    text-align: center;
+    margin-bottom: -50px;
+}
+
+.search {
+    width: 35%;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 15px;
+    margin-top: 25px;
+    font-size: 16px; 
+    font-family: 'Courier New';
+    color: silver;
+    border-radius: 5px;
+    border-color: silver;
 }
 
 .container {
@@ -8,7 +21,7 @@
     max-width: 80%;
     padding-right: 30px;
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 } 
 
 .container {
@@ -21,5 +34,33 @@
 .photo {
     margin-top: 60px;
     margin-left: 30px;
-
 }
+
+.lightbox {
+    margin-top: 80px;
+}
+
+.lb-dataContainer {
+    margin-top: 40px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.lb-number {
+    visibility: hidden;
+}
+
+.lb-data .lb-caption {
+    font-size: 14px;
+    font-family: 'Courier New';
+    text-align: left;
+}
+
+.lb-nav a.lb-prev {
+    margin-right:   
+}
+
+.lb-Container {
+    left: 100px;
+}
+
