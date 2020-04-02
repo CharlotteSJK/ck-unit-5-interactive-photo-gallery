@@ -1,3 +1,7 @@
+/* ================================= 
+  Search Box 
+==================================== */
+
 form {
     text-align: center;
     margin-bottom: -50px;
@@ -8,13 +12,18 @@ form {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
-    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-top: 40px;
     font-size: 16px; 
     font-family: 'Courier New';
     color: silver;
     border-radius: 5px;
     border-color: silver;
 }
+
+/* ================================= 
+  Gallery 
+==================================== */
 
 .container {
     margin: auto;
@@ -25,12 +34,22 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-basis: auto;
     justify-content: space-evenly;
 } 
 
 .photo {
     margin-top: 60px;
     margin-left: 30px;
+}
+
+
+/* ================================= 
+  Lightbox
+==================================== */
+
+.lightboxOverlay {
+    height: 100%;
 }
 
 .lightbox {
@@ -40,7 +59,6 @@ form {
 .lb-dataContainer {
     margin-top: 40px;
     max-width: 600px;
-    text-align: center;
 }
 
 .lb-number {
@@ -48,11 +66,9 @@ form {
 }
 
 .lb-data .lb-caption {
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Courier New';
-    text-align: left;
 }
-
 
 
 /* ================================= 
@@ -77,6 +93,15 @@ form {
 .photo {
     margin-top: 30px;
 }
+
+.lightboxOverlay {
+    background-color: slategrey;
+   }
+
+.lb-data .lb-caption {
+    font-size: 12px;
+    color: black;
+    }
 }
 
 /* ---- Max-width 768px ---- */
@@ -86,7 +111,7 @@ form {
 .search {
     margin-bottom: 40px;
     margin-top: 40px;
-    width: 40%;
+    width: 50%;
     }
 
 .photo {
@@ -96,4 +121,12 @@ form {
     padding-right: 5px;
     }
 
+ .lightboxOverlay {
+     background-color: slategrey;
+    }
+
+.lb-data .lb-caption {
+    font-size: 14px;
+    color: black;
+    }
 }
