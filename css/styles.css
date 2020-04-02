@@ -26,11 +26,11 @@ form {
 ==================================== */
 
 .container {
-    margin: auto;
-    max-width: 80%;
+    margin: 0 auto;
+    max-width: 1024px;
     padding-right: 30px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -41,6 +41,10 @@ form {
 .photo {
     margin-top: 60px;
     margin-left: 30px;
+}
+
+.photo:hover {
+    transform: scale(1.1);
 }
 
 
