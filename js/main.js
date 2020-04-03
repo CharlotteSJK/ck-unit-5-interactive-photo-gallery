@@ -6,11 +6,12 @@ search.addEventListener('keyup', function() {
     for (let i = 0; i < caption.length; i ++) {
         const searchedPhoto = caption[i].getAttribute('data-title');        
         if (searchedPhoto.toLowerCase().includes(searchTerm)) {                 
-            caption[i].style.display = "block";                             // If the searched term is included in the caption show the photo
+            caption[i].parentNode.style.display = "block";                          // If the searched term is included in the caption show the photo
         }   else { 
-            caption[i].style.display = "none";                              // If the searched term is included in the caption hide the photo
+            caption[i].parentNode.style.display = "none";                             // If the searched term is included in the caption hide the photo
         }
     }
     });
 
    
+    
