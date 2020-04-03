@@ -49,31 +49,23 @@ form {
 
 
 /* ================================= 
-  Lightbox
+  Fancybox
 ==================================== */
 
-.lightboxOverlay {
-    height: 100%;
+.fancybox-is-open .fancybox-bg {
+    opacity: .92;
 }
 
-.lightbox {
-    margin-top: 80px;
-}
+.fancybox-stage {
+    max-width: 95%;
+    margin: auto;
+    }
 
-.lb-dataContainer {
-    margin-top: 40px;
-    max-width: 600px;
-}
-
-.lb-number {
-    visibility: hidden;
-}
-
-.lb-data .lb-caption {
+.fancybox-caption {
     font-size: 16px;
     font-family: 'Courier New';
+    text-align: center;
 }
-
 
 /* ================================= 
   Media Queries
@@ -84,28 +76,31 @@ form {
 @media (max-width: 420px) {
 
 .search {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     margin-top: 40px;
     width: 60%;
 }
 
 .container {
+    max-width: 80%;
     text-align: center;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
+
 .photo {
     margin-top: 30px;
 }
 
-.lightboxOverlay {
-    background-color: slategrey;
-   }
+.fancybox-caption {
+    font-size: 13px;
+    font-family: 'Courier New';
+    text-align: center;
+}
+.fancybox-caption__body {
+    margin-top: -190px;
+    text-align: left;
+}
 
-.lb-data .lb-caption {
-    font-size: 12px;
-    color: black;
-    }
 }
 
 /* ---- Max-width 768px ---- */
@@ -118,19 +113,26 @@ form {
     width: 50%;
     }
 
+.container {
+    max-width: 80%;
+    }
+
 .photo {
     margin-top: 30px;
     margin-bottom: 20px;
     padding-left: 5px;
     padding-right: 5px;
     }
-
- .lightboxOverlay {
-     background-color: slategrey;
-    }
-
-.lb-data .lb-caption {
+    
+.fancybox-caption {
     font-size: 14px;
-    color: black;
+    font-family: 'Courier New';
+    text-align: center;
     }
+
+.fancybox-caption__body {
+    margin-top: -80px;
+    text-align: left;
+    }    
+
 }
