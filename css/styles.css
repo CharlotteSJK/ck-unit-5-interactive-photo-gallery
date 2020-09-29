@@ -4,21 +4,20 @@
 
 form {
     text-align: center;
-    margin-bottom: -50px;
 }
 
 .search {
-    width: 35%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    margin-bottom: 10px;
-    margin-top: 40px;
-    font-size: 16px; 
+    margin: 40px 0 20px 0;
+    width: 60%;
+    padding: 10px 0 10px 15px;
     font-family: 'Courier New';
-    color: silver;
     border-radius: 5px;
-    border-color: silver;
+    border: solid 2px silver;
+    color: silver;
+}
+
+::placeholder {
+    color: silver;
 }
 
 /* ================================= 
@@ -26,27 +25,17 @@ form {
 ==================================== */
 
 .container {
-    margin: 0 auto;
-    max-width: 1024px;
-    padding-right: 30px;
-    margin-top: 30px;
     margin-bottom: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-basis: auto;
-    justify-content: space-evenly;
 } 
 
 .photo {
-    margin-top: 60px;
-    margin-left: 30px;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .photo:hover {
-    transform: scale(1.1);
+    transform: scale(1.06);
 }
-
 
 /* ================================= 
   Fancybox
@@ -62,73 +51,75 @@ form {
     }
 
 .fancybox-caption {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Courier New';
-    text-align: center;
+    text-align: left;
 }
+
+/* .fancybox-caption__body {
+    margin-top: -200px;
+}  */
 
 /* ================================= 
   Media Queries
 ==================================== */
 
-/* ---- Max-width 420px ---- */
+/* ---- min-width: 576px ---- */
 
-@media (max-width: 420px) {
+@media (min-width: 576px) {
 
-.search {
-    margin-bottom: 35px;
-    margin-top: 40px;
-    width: 60%;
-}
-
-.container {
-    max-width: 80%;
-    text-align: center;
-    flex-direction: column; 
-}
-
-.photo {
-    margin-top: 30px;
-}
-
-.fancybox-caption {
-    font-size: 13px;
-}
-.fancybox-caption__body {
-    margin-top: -190px;
-    text-align: left;
-}
+    /* .fancybox-caption__body {
+        margin-top: -120px;
+    }  */
 
 }
 
-/* ---- Max-width 768px ---- */
+/* ---- min-width: 768px ---- */
 
-@media (min-width: 421px) and (max-width: 768px) {
+@media (min-width: 768px) {
 
-.search {
-    margin-bottom: 40px;
-    margin-top: 40px;
-    width: 50%;
+    .search {
+        width: 50%;
+        margin: 40px 0 10px 0;
     }
 
-.container {
-    max-width: 80%;
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
-.photo {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+    .photo {
+        margin-top: 35px;
     }
+
+    .fancybox-caption {
+        font-size: 16px;
+    } 
+
+    /* .fancybox-caption__body {
+        margin-top: -160px;
+    }  */
+}
+
+/* ---- min-width: 1040px ---- */
+
+@media (min-width: 1040px) {
+
     
-.fancybox-caption {
-    font-size: 14px;
+    .search {
+        width: 35%;
+        margin: 40px 0 10px 0;
+        font-size: 16px; 
     }
 
-.fancybox-caption__body {
-    margin-top: -80px;
-    text-align: left;
-    }    
+    .container {
+        margin: 0 20px 0 20px;
+    }
+
+    .photo {
+        margin: 35px 15px 0 15px;
+    }
 
 }
