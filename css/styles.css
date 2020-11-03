@@ -110,16 +110,16 @@ form {
     
     .search {
         width: 35%;
-        margin: 40px 0 10px 0;
+        margin: 35px 0 15px 0;
         font-size: 16px; 
     }
 
     .container {
-        margin: 0 20px 0 20px;
+        margin: 0 100px 0 100px;
     }
 
     .photo {
-        margin: 35px 15px 0 15px;
+        margin: 20px 40px 0 40px;
     }
 
 }
